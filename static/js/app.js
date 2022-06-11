@@ -42,15 +42,15 @@ $("#accel").roundSlider({
 
 document.querySelector("#latitude").value = data.gps.latitude;
 document.querySelector("#latitude").onchange = (e) => {
-    if(isNumeric(e.value) == true) {
-        data.gps.latitude = parseFloat(e.value);
+    if(isNumeric(e.target.value) == true) {
+        data.gps.latitude = parseFloat(e.target.value);
     }
 };
 
 document.querySelector("#longitude").value = data.gps.longitude;
 document.querySelector("#longitude").onchange = (e) => {
-    if(isNumeric(e.value) == true) {
-        data.gps.longitude = parseFloat(e.value);
+    if(isNumeric(e.target.value) == true) {
+        data.gps.longitude = parseFloat(e.target.value);
     }
 };
 
