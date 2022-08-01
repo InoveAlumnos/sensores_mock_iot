@@ -25,6 +25,10 @@ $("#heading").roundSlider({
     drag: function(e) {
         var angle = e.value;
         data.inerciales.heading = angle;
+    },
+    change: function(e) {
+        var angle = e.value;
+        data.inerciales.heading = angle;
     }
 });
 $("#accel").roundSlider({
@@ -35,6 +39,10 @@ $("#accel").roundSlider({
     startAngle: "+90",
     endAngle : "+360",
     drag: function(e) {
+        var angle = e.value;
+        data.inerciales.accel = angle;
+    },
+    change: function(e) {
         var angle = e.value;
         data.inerciales.accel = angle;
     }
